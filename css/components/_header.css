@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--color-white);
+    border-bottom: 1px solid red;
+}
+.header__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo {
+
+}
+.header__logo-link {
+}
+.header__logo-brand {
+}
+.header__navbar {
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.header__menu-item {
+    display: inline-flex;
+}
+.header__menu-link {
+    font-size: 20px;
+}
+.header__menu-link--active {
+    color: var(--color-primary);
+}
+.header__actions {
+}
+.header__actions-item {
+}
+.header__actions-link {
+}
+.header__actions-icon {
+}
+.header__actions-linkText {
+}
+.header__actions-linkText--primary {
+}
