@@ -1,0 +1,112 @@
+.advantages {
+    width: 100%;
+    padding: 140px 0;
+}
+.advantages__container {
+}
+.advantages__title {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: var(--secondary-family);
+    font-weight: 500;
+    font-size: 96px;
+}
+@media screen and (max-width: 768px){
+   .advantages__title {
+    font-size: 42px;
+   } 
+}
+.advantages__title-span {
+    padding-left: 5px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    display: inline-block;
+}
+.advantages__text {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.advantages__descr {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+.advantages__descr:not(:last-child) {
+    margin-bottom: 30px;
+}
+.advantages__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.advantages__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.advantages__icon {
+    width: 32px;
+    height: auto;
+}
+.advantages__slider {
+    width: 100%;
+    height: auto;
+}
+.advantages__slider-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.advantages__slider-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.advantages__slider-preview {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.advantages__slider-image {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 300ms ease;
+}
+.advantages__slider-preview:hover .advantages__slider-image {
+    transform: scale(1.05);
+}
+.advantages__slider-control {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    display: flex;
+}
+.advantages__slider-button {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 24px;
+    background-color: rgba(255,255,255, .5);
+    transition: background 200ms linear;
+}
+.advantages__slider-button:hover {
+    background-color: rgba(255,255,255, 1);
+}
+.advantages__slider-button--prev {
+}

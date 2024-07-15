@@ -6,4 +6,10 @@
     --color-boder: #f3f3f3;
     --color-primary: #007bfb;
     --nav-transition: 200ms;
+
+    /* breakpoints */
+    --point-xl: 1440;
+    --point-lg: 1024;
+    --point-md: 768;
+    --point-sm: 640;
 }
