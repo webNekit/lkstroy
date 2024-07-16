@@ -32,6 +32,12 @@
     gap: 10px;
 }
 
+@media screen and (max-width: 1024px) {
+    .advantages__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (max-width: 768px) {
     .advantages__grid {
         grid-template-columns: repeat(2, 1fr);
