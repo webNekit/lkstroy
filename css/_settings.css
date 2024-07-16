@@ -24,6 +24,21 @@ body {
 }
 @media screen and (max-width: 1440px){
     .container {
-        max-width: 1054px;
+        max-width: 1170px;
     }
+}
+.space-y-10 > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+.space-y-20 > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+.space-y-30 > *:not(:last-child) {
+    margin-bottom: 30px;
+}
+.space-y-40 > *:not(:last-child) {
+    margin-bottom: 40px;
+}
+.space-y-50 > *:not(:last-child) {
+    margin-bottom: 50px;
 }

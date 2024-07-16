@@ -1,0 +1,113 @@
+.about {
+    width: 100%;
+    padding: 140px 0;
+}
+.about__container {
+}
+.about__title {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: var(--secondary-family);
+    font-weight: 500;
+    font-size: 96px;
+}
+@media screen and (max-width: 768px){
+   .about__title {
+    font-size: 42px;
+   } 
+}
+.about__title-span {
+    padding-left: 5px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    display: inline-block;
+}
+.about__text {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about__descr {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+.about__descr:not(:last-child) {
+    margin-bottom: 30px;
+}
+.about__list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.about__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.about__icon {
+    width: 32px;
+    height: auto;
+}
+.about__slider {
+    width: 100%;
+    height: auto;
+}
+.about__slider-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.about__slider-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.about__slider-preview {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.about__slider-image {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 300ms ease;
+}
+.about__slider-preview:hover .about__slider-image {
+    transform: scale(1.05);
+}
+.about__slider-control {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    display: flex;
+}
+.about__slider-button {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 24px;
+    background-color: rgba(255,255,255, .5);
+    transition: background 200ms linear;
+}
+.about__slider-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.about__slider-button--prev {
+}
