@@ -1,0 +1,29 @@
+.page-label {
+    padding: 50px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page-label__container {}
+.page-label__title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--secondary-family);
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 130px;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 1024px) {
+    .page-label__title {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .page-label__title {
+        font-size: 40px;
+    }
+}
