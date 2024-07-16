@@ -36,3 +36,13 @@
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+@media screen and (max-width: 768px) {
+    .hero__title {
+        font-size: 64px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .hero__title {
+        font-size: 32px;
+    }
+}

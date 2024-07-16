@@ -16,12 +16,15 @@
 <body>
     <header class="header" id="header">
         <div class="container header__container">
+            <button class="header__menu-btn" id="menuBtn">
+                <i class='bx bx-menu'></i>
+            </button>
             <div class="header__logo">
                 <a href="" class="header__logo-link">
                     <img src="img/logo.png" width="220" height="46" alt="Логотип сайта" class="header__logo-brand">
                 </a>
             </div>
-            <nav class="header__navbar">
+            <nav class="header__navbar" id="navbar">
                 <menu class="header__menu">
                     <li class="header__menu-item"><a href="#!" class="header__menu-link header__menu-link--active">О компании</a></li>
                     <li class="header__menu-item"><a href="#!" class="header__menu-link">Наши работы</a></li>
@@ -29,6 +32,9 @@
                     <li class="header__menu-item"><a href="#!" class="header__menu-link">Новости</a></li>
                     <li class="header__menu-item"><a href="#!" class="header__menu-link">Контакты</a></li>
                 </menu>
+                <button class="header__menu-close" id="closeMenu">
+                    <i class='bx bx-x'></i>
+                </button>
             </nav>
             <ul class="header__actions">
                 <li class="header__actions-item">
