@@ -17,6 +17,9 @@
     font-size: 130px;
     letter-spacing: 2px;
 }
+.work-label {
+    padding: 120px 0;
+}
 @media screen and (max-width: 1024px) {
     .page-label__title {
         font-size: 80px;
@@ -25,5 +28,8 @@
 @media screen and (max-width: 768px) {
     .page-label__title {
         font-size: 40px;
+    }
+    .work-label {
+        padding: 50px 0;
     }
 }

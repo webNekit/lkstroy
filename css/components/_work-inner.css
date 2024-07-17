@@ -1,0 +1,137 @@
+.work-inner {
+    padding: 110px 0;
+    width: 100%;
+}
+
+.work-inner__content {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.work-inner__text {
+    width: calc(60% - 30px);
+}
+
+.work-inner__sidebar {
+    width: 40%;
+}
+
+.work-inner__sidebar-title {
+    margin: 0;
+    padding: 0;
+    font-size: 70px;
+    font-weight: 500;
+    font-family: var(--secondary-family);
+    text-transform: uppercase;
+
+}
+
+.work-inner__param {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.work-inner__param:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.work-inner__tabs {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.work-inner__banner {
+    width: calc(60% - 30px);
+}
+
+.work-inner__banner-img {
+    display: block;
+    max-width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.work-inner__list {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    counter-reset: steps;
+}
+
+.work-inner__list-item {
+    position: relative;
+    padding: 15px 30px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.work-inner__list-item::before {
+    top: 0;
+    right: 30px;
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+    color: var(--color-primary);
+    font-size: 14px;
+    counter-increment: steps;
+    content: counter(steps);
+    display: flex;
+    align-items: center;
+}
+
+.work-inner__list-item:first-child {
+    border-top: 1px solid var(--color-border);
+}
+
+.work-inner__list-icon {
+    max-width: 23px;
+    height: auto;
+}
+
+.work-inner__list-span {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .work-inner {
+        padding: 60px 0;
+    }
+    .work-inner__content {
+        flex-direction: column;
+    }
+
+    .work-inner__text {
+        width: 100%;
+        order: 2;
+    }
+
+    .work-inner__sidebar {
+        width: 100%;
+        order: 1;
+    }
+    .work-inner__list-item {
+        padding-left: 15px;
+        padding-right: 45px;
+        gap: 15px;
+    }
+    .work-inner__sidebar-title {
+        font-size: 42px;
+    }
+    .work-inner__tabs {
+        flex-direction: column;
+    }
+    .work-inner__banner {
+        width: 100%;
+    }
+    .work-inner__list {
+        width: 100%;
+    }
+}
